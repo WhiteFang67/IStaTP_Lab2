@@ -1,0 +1,329 @@
+[
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.BookingsController",
+    "Method": "GetBookings",
+    "RelativePath": "api/Bookings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CarRentalAPIWebApp.Controllers.BookingsController\u002BBookingDto, CarRentalAPIWebApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.BookingsController",
+    "Method": "PostBooking",
+    "RelativePath": "api/Bookings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingDto",
+        "Type": "CarRentalAPIWebApp.Controllers.BookingsController\u002BBookingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CarRentalAPIWebApp.Controllers.BookingsController\u002BBookingDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.BookingsController",
+    "Method": "GetBooking",
+    "RelativePath": "api/Bookings/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CarRentalAPIWebApp.Controllers.BookingsController\u002BBookingDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.BookingsController",
+    "Method": "PutBooking",
+    "RelativePath": "api/Bookings/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookingDto",
+        "Type": "CarRentalAPIWebApp.Controllers.BookingsController\u002BBookingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.BookingsController",
+    "Method": "DeleteBooking",
+    "RelativePath": "api/Bookings/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.CarsController",
+    "Method": "GetCars",
+    "RelativePath": "api/Cars",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CarRentalAPIWebApp.Controllers.CarsController\u002BCarDto, CarRentalAPIWebApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.CarsController",
+    "Method": "PostCar",
+    "RelativePath": "api/Cars",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "car",
+        "Type": "CarRentalAPIWebApp.Models.Car",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CarRentalAPIWebApp.Models.Car",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.CarsController",
+    "Method": "GetCar",
+    "RelativePath": "api/Cars/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CarRentalAPIWebApp.Controllers.CarsController\u002BCarDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.CarsController",
+    "Method": "PutCar",
+    "RelativePath": "api/Cars/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "car",
+        "Type": "CarRentalAPIWebApp.Models.Car",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.CarsController",
+    "Method": "DeleteCar",
+    "RelativePath": "api/Cars/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.ReviewsController",
+    "Method": "GetReviews",
+    "RelativePath": "api/Reviews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CarRentalAPIWebApp.Controllers.ReviewsController\u002BReviewDto, CarRentalAPIWebApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.ReviewsController",
+    "Method": "PostReview",
+    "RelativePath": "api/Reviews",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reviewDto",
+        "Type": "CarRentalAPIWebApp.Controllers.ReviewsController\u002BReviewDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CarRentalAPIWebApp.Controllers.ReviewsController\u002BReviewDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.ReviewsController",
+    "Method": "GetReview",
+    "RelativePath": "api/Reviews/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CarRentalAPIWebApp.Controllers.ReviewsController\u002BReviewDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.ReviewsController",
+    "Method": "PutReview",
+    "RelativePath": "api/Reviews/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reviewDto",
+        "Type": "CarRentalAPIWebApp.Controllers.ReviewsController\u002BReviewDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalAPIWebApp.Controllers.ReviewsController",
+    "Method": "DeleteReview",
+    "RelativePath": "api/Reviews/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

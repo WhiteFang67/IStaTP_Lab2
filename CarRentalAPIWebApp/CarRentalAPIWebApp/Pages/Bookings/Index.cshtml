@@ -1,0 +1,98 @@
+﻿@page
+@model CarRentalAPIWebApp.Pages.Bookings.IndexModel
+@{
+    ViewData["Title"] = "Бронювання";
+}
+
+<h1 class="my-4">Бронювання</h1>
+
+<div id="alertContainer"></div>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>Успіх!</strong> @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<div class="mb-3">
+    <a asp-page="Create" class="btn btn-primary">Створити бронювання</a>
+</div>
+
+<!-- Повідомлення про порожній список -->
+@if (Model.Bookings?.Any() != true)
+{
+    <p>Наразі немає бронювань. Натисніть "Створити бронювання", щоб додати нове.</p>
+}
+else
+{
+    <div id="bookings" class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Автомобіль</th>
+                    <th>Користувач</th>
+                    <th>Початок</th>
+                    <th>Кінець</th>
+                    <th>Статус</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var booking in Model.Bookings)
+                {
+                    <tr>
+                        <td>@booking.Id</td>
+                        <td>@booking.Car?.Brand @booking.Car?.Model</td>
+                        <td>@booking.UserName</td>
+                        <td>@booking.StartDate.ToString("dd.MM.yyyy")</td>
+                        <td>@booking.EndDate.ToString("dd.MM.yyyy")</td>
+                        <td>@booking.Status?.DisplayName</td>
+                        <td>
+                            <a asp-page="Edit" asp-route-id="@booking.Id" class="btn btn-warning btn-sm">Редагувати</a>
+                            <button type="button" class="btn btn-danger btn-sm delete-btn"
+                                    data-bs-toggle="modal" data-bs-target="#deleteBookingModal"
+                                    data-booking-id="@booking.Id" data-booking-username="@booking.UserName">
+                                Видалити
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+<!-- Модальне вікно для підтвердження видалення -->
+<div class="modal fade" id="deleteBookingModal" tabindex="-1" aria-labelledby="deleteBookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteBookingModalLabel">Підтвердження видалення</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Ви впевнені, що хочете видалити бронювання для користувача <strong id="deleteBookingUserName"></strong>?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ні</button>
+                <button type="button" id="confirmDeleteBtn" class="btn btn-danger">Так, видалити</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Bookings.js" asp-append-version="true"></script>
+}

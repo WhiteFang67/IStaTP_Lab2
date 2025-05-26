@@ -1,0 +1,78 @@
+﻿@page "{id:int}"
+@model CarRentalAPIWebApp.Pages.Bookings.EditModel
+@{
+    ViewData["Title"] = "Редагувати бронювання";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="bg-light shadow rounded p-4">
+                <h2 class="mb-4 text-black text-center">Редагувати бронювання</h2>
+
+                <div id="alertContainer" class="mb-3"></div>
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+                        @TempData["ErrorMessage"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+
+                @if (Model.Booking == null || Model.Cars == null || Model.Statuses == null)
+                {
+                    <p class="text-danger text-center">Бронювання або дані не знайдено.</p>
+                    <div class="text-center mt-3">
+                        <a asp-page="Index" class="btn btn-secondary">Назад</a>
+                    </div>
+                }
+                else
+                {
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <form method="post">
+                        <input type="hidden" asp-for="Booking.Id" />
+                        <div class="mb-3">
+                            <label asp-for="Booking.CarId" class="form-label text-black">Автомобіль</label>
+                            <select asp-for="Booking.CarId" class="form-control" asp-items="@Model.Cars">
+                                <option value="" disabled>Виберіть автомобіль</option>
+                            </select>
+                            <span asp-validation-for="Booking.CarId" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Booking.UserName" class="form-label text-black">Ім'я користувача</label>
+                            <input asp-for="Booking.UserName" class="form-control" placeholder="Введіть ім'я" />
+                            <span asp-validation-for="Booking.UserName" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Booking.StartDate" class="form-label text-black">Дата початку</label>
+                            <input asp-for="Booking.StartDate" type="date" class="form-control" />
+                            <span asp-validation-for="Booking.StartDate" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Booking.EndDate" class="form-label text-black">Дата закінчення</label>
+                            <input asp-for="Booking.EndDate" type="date" class="form-control" />
+                            <span asp-validation-for="Booking.EndDate" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Booking.StatusId" class="form-label text-black">Статус</label>
+                            <select asp-for="Booking.StatusId" class="form-control" asp-items="@Model.Statuses">
+                                <option value="" disabled>Виберіть статус</option>
+                            </select>
+                            <span asp-validation-for="Booking.StatusId" class="text-danger"></span>
+                        </div>
+                        <div class="d-flex justify-content-center gap-2 mt-4">
+                            <button type="submit" class="btn btn-primary">Зберегти</button>
+                            <a asp-page="Index" class="btn btn-secondary">Скасувати</a>
+                        </div>
+                    </form>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+}

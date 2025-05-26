@@ -1,0 +1,113 @@
+﻿@page
+@model CarRentalAPIWebApp.Pages.Reviews.IndexModel
+@{
+    ViewData["Title"] = "Відгуки про сервіс";
+}
+
+<div class="container mt-4">
+    <!-- Форма для створення відгуку -->
+    <div class="row mb-5">
+        <div class="col-md-6 offset-md-3">
+            <div class="bg-light shadow rounded p-4">
+                <h2 class="mb-4 text-black text-center">Залишити відгук</h2>
+
+                <div id="alertContainer" class="mb-3"></div>
+
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-dismissible alert-success mb-3">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>Успіх!</strong> @TempData["SuccessMessage"]
+                    </div>
+                }
+
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="alert alert-danger mb-3" role="alert">
+                        @TempData["ErrorMessage"]
+                    </div>
+                }
+
+                <form id="addReviewForm" action="javascript:void(0);">
+                    <div class="mb-3">
+                        <label for="add-username" class="form-label text-black">Ім'я користувача</label>
+                        <input type="text" class="form-control" id="add-username" placeholder="Введіть ваше ім'я">
+                        <div class="invalid-feedback">Ім'я користувача є обов'язковим.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="add-comment" class="form-label text-black">Коментар</label>
+                        <textarea class="form-control" id="add-comment" rows="3" placeholder="Введіть ваш відгук"></textarea>
+                        <div class="invalid-feedback">Коментар є обов'язковим.</div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Додати відгук</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Список відгуків -->
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h3 class="mb-4 text-white">Відгуки</h3>
+            <div id="reviews" class="reviews-list"></div>
+        </div>
+    </div>
+
+    <!-- Модальне вікно для редагування відгуку -->
+    <div class="modal fade" id="editReviewModal" tabindex="-1" aria-labelledby="editReviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editReviewModalLabel">Редагувати відгук</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editReviewForm" action="javascript:void(0);">
+                        <input type="hidden" id="edit-id">
+                        <div class="mb-3">
+                            <label for="edit-username" class="form-label">Ім'я користувача</label>
+                            <input type="text" class="form-control" id="edit-username" placeholder="Введіть ваше ім'я">
+                            <div class="invalid-feedback">Ім'я користувача є обов'язковим.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-comment" class="form-label">Коментар</label>
+                            <textarea class="form-control" id="edit-comment" rows="3" placeholder="Введіть ваш відгук"></textarea>
+                            <div class="invalid-feedback">Коментар є обов'язковим.</div>
+                        </div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <button type="submit" class="btn btn-primary">Зберегти</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Скасувати</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальне вікно для підтвердження видалення -->
+    <div class="modal fade" id="deleteReviewModal" tabindex="-1" aria-labelledby="deleteReviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteReviewModalLabel">Підтвердження видалення</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Ви впевнені, що хочете видалити відгук користувача <strong id="deleteReviewUserName"></strong>?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Скасувати</button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Видалити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Reviews.js" asp-append-version="true"></script>
+}
