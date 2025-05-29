@@ -1,8 +1,8 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\js\Reviews.js
 wwwroot\js\Bookings.js
 wwwroot\js\Cars.js
+wwwroot\js\Reviews.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
