@@ -2,6 +2,7 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\Bookings.js
 wwwroot\js\Cars.js
+wwwroot\js\Reviews.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -66,9 +67,10 @@ wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\reviews.html
-wwwroot\js\Reviews.js
 D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\css\site.css
 D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\favicon.ico
+D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\js\Reviews.js
+D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\reviews.html
 D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\js\Bookings.js
 D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\js\Cars.js
 D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\js\site.js
@@ -133,5 +135,3 @@ D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp
 D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\lib\jquery\dist\jquery.slim.min.js
 D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\lib\jquery\dist\jquery.slim.min.map
 D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\lib\jquery\LICENSE.txt
-D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\reviews.html
-D:\КНУ\Курс2\ІСтаТП\Лаба2\CarRentalAPIWebApp\CarRentalAPIWebApp\wwwroot\js\Reviews.js
