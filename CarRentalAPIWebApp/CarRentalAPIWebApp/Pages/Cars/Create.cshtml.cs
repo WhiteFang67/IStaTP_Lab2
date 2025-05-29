@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using CarRentalAPIWebApp.Models;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace CarRentalAPIWebApp.Pages.Cars
@@ -12,6 +14,7 @@ namespace CarRentalAPIWebApp.Pages.Cars
     {
         private readonly ILogger<CreateModel> _logger;
         private readonly CarRentalAPIContext _context;
+        private const int CAR_STATUS_RENTED = 2; // ID статусу "Орендоване"
 
         public CreateModel(ILogger<CreateModel> logger, CarRentalAPIContext context)
         {
@@ -22,12 +25,15 @@ namespace CarRentalAPIWebApp.Pages.Cars
         [BindProperty]
         public Car Car { get; set; }
 
-        public SelectList Statuses { get; set; }
+        public List<CarStatusType> AvailableStatuses { get; set; }
 
         public async Task OnGetAsync()
         {
             _logger.LogInformation("Відображення сторінки створення автомобіля.");
-            Statuses = new SelectList(await _context.CarStatusTypes.ToListAsync(), "Id", "DisplayName");
+            // Фільтруємо статуси, виключаючи "Орендоване"
+            AvailableStatuses = await _context.CarStatusTypes
+                .Where(s => s.Id != CAR_STATUS_RENTED)
+                .ToListAsync();
         }
 
         public async Task<IActionResult> OnPostAsync()
@@ -35,7 +41,9 @@ namespace CarRentalAPIWebApp.Pages.Cars
             if (!ModelState.IsValid)
             {
                 _logger.LogWarning("Помилка валідації при створенні автомобіля.");
-                Statuses = new SelectList(await _context.CarStatusTypes.ToListAsync(), "Id", "DisplayName");
+                AvailableStatuses = await _context.CarStatusTypes
+                    .Where(s => s.Id != CAR_STATUS_RENTED)
+                    .ToListAsync();
                 return Page();
             }
 

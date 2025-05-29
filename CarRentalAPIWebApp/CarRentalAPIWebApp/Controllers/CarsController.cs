@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using CarRentalAPIWebApp.Models;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,15 +12,17 @@ namespace CarRentalAPIWebApp.Controllers
     public class CarsController : ControllerBase
     {
         private readonly CarRentalAPIContext _context;
-        private readonly ILogger<CarsController> _logger;
+        private const int CAR_STATUS_AVAILABLE = 1;
+        private const int CAR_STATUS_RENTED = 2;
+        private const int CAR_STATUS_UNDER_REPAIR = 3;
+        private const int BOOKING_STATUS_ACTIVE = 1;
+        private const int BOOKING_STATUS_PLANNED = 4;
 
-        public CarsController(CarRentalAPIContext context, ILogger<CarsController> logger)
+        public CarsController(CarRentalAPIContext context)
         {
             _context = context;
-            _logger = logger;
         }
 
-        // DTO для уникнення циклічної серіалізації
         public class CarDto
         {
             public int Id { get; set; }
@@ -33,12 +34,10 @@ namespace CarRentalAPIWebApp.Controllers
             public CarStatusType Status { get; set; }
         }
 
-        // GET: api/Cars
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CarDto>>> GetCars()
         {
-            _logger.LogInformation("Fetching all cars.");
-            var cars = await _context.Cars
+            return await _context.Cars
                 .Include(c => c.Status)
                 .Select(c => new CarDto
                 {
@@ -51,102 +50,80 @@ namespace CarRentalAPIWebApp.Controllers
                     Status = c.Status
                 })
                 .ToListAsync();
-
-            foreach (var car in cars)
-            {
-                _logger.LogInformation("Car ID {Id}, Status: {Status}", car.Id, car.Status?.DisplayName ?? "null");
-            }
-
-            return cars;
         }
 
-        // GET: api/Cars/5
         [HttpGet("{id}")]
         public async Task<ActionResult<CarDto>> GetCar(int id)
         {
             var car = await _context.Cars
                 .Include(c => c.Status)
-                .Where(c => c.Id == id)
-                .Select(c => new CarDto
-                {
-                    Id = c.Id,
-                    Brand = c.Brand,
-                    Model = c.Model,
-                    Year = c.Year,
-                    StatusId = c.StatusId,
-                    PricePerDay = c.PricePerDay,
-                    Status = c.Status
-                })
-                .FirstOrDefaultAsync();
+                .FirstOrDefaultAsync(c => c.Id == id);
 
-            return car == null ? NotFound() : car;
+            return car == null ? NotFound() : (ActionResult<CarDto>)new CarDto
+            {
+                Id = car.Id,
+                Brand = car.Brand,
+                Model = car.Model,
+                Year = car.Year,
+                StatusId = car.StatusId,
+                PricePerDay = car.PricePerDay,
+                Status = car.Status
+            };
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCar(int id, Car car)
         {
             if (id != car.Id)
-            {
-                _logger.LogWarning("Car ID mismatch: URL ID {UrlId}, Body ID {BodyId}", id, car.Id);
                 return BadRequest("Car ID mismatch.");
-            }
 
-            if (car == null || !ModelState.IsValid)
-            {
-                _logger.LogWarning("Car data is null or validation failed.");
-                return BadRequest(ModelState);
-            }
+            var existingCar = await _context.Cars
+                .Include(c => c.Bookings)
+                .FirstOrDefaultAsync(c => c.Id == id);
 
-            var existingCar = await _context.Cars.FindAsync(id);
             if (existingCar == null)
-            {
-                _logger.LogWarning("Car with ID {Id} not found.", id);
                 return NotFound();
-            }
 
-            if (!await _context.CarStatusTypes.AnyAsync(s => s.Id == car.StatusId))
-            {
-                _logger.LogWarning("Invalid StatusId: {StatusId}", car.StatusId);
-                return BadRequest("Invalid StatusId.");
-            }
+            if (existingCar.Bookings.Any(b =>
+                b.StatusId == BOOKING_STATUS_ACTIVE ||
+                b.StatusId == BOOKING_STATUS_PLANNED))
+                return BadRequest("Cannot edit car with active or planned bookings.");
+
+            if (car.StatusId == CAR_STATUS_RENTED)
+                return BadRequest("Cannot manually set status to 'Rented'");
 
             existingCar.Brand = car.Brand;
             existingCar.Model = car.Model;
             existingCar.Year = car.Year;
-            existingCar.StatusId = car.StatusId;
             existingCar.PricePerDay = car.PricePerDay;
+
+            if (car.StatusId == CAR_STATUS_AVAILABLE || car.StatusId == CAR_STATUS_UNDER_REPAIR)
+                existingCar.StatusId = car.StatusId;
 
             try
             {
                 await _context.SaveChangesAsync();
-                _logger.LogInformation("Car with ID {Id} successfully updated.", id);
+                return NoContent();
             }
             catch (DbUpdateConcurrencyException)
             {
                 if (!await CarExists(id))
-                {
-                    _logger.LogWarning("Concurrency conflict: Car with ID {Id} not found.", id);
                     return NotFound();
-                }
-                _logger.LogError("Concurrency conflict when updating car with ID {Id}.", id);
                 throw;
             }
-
-            return NoContent();
         }
 
         [HttpPost]
         public async Task<ActionResult<Car>> PostCar(Car car)
         {
-            if (car == null || !ModelState.IsValid)
-            {
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            }
+
+            if (car.StatusId == CAR_STATUS_RENTED)
+                return BadRequest("Cannot set car status to 'Rented' when creating");
 
             if (!await _context.CarStatusTypes.AnyAsync(s => s.Id == car.StatusId))
-            {
                 return BadRequest("Invalid StatusId.");
-            }
 
             _context.Cars.Add(car);
             await _context.SaveChangesAsync();
@@ -156,34 +133,22 @@ namespace CarRentalAPIWebApp.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCar(int id)
         {
-            if (id <= 0)
-            {
-                return BadRequest("Invalid car ID.");
-            }
-
             var car = await _context.Cars
                 .Include(c => c.Bookings)
                 .FirstOrDefaultAsync(c => c.Id == id);
 
             if (car == null)
-            {
                 return NotFound();
-            }
 
             if (car.Bookings.Any())
-            {
-                return BadRequest("Cannot delete car with existing bookings.");
-            }
+                return BadRequest("Cannot delete car with existing bookings");
 
             _context.Cars.Remove(car);
             await _context.SaveChangesAsync();
-
-            return Ok(new { message = "Автомобіль успішно видалено." });
+            return Ok(new { message = "Car deleted successfully" });
         }
 
-        private async Task<bool> CarExists(int id)
-        {
-            return await _context.Cars.AnyAsync(e => e.Id == id);
-        }
+        private async Task<bool> CarExists(int id) =>
+            await _context.Cars.AnyAsync(e => e.Id == id);
     }
 }

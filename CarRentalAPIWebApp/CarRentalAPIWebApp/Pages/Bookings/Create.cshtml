@@ -31,24 +31,20 @@
                     </div>
                     <div class="mb-3">
                         <label asp-for="Booking.StartDate" class="form-label text-black">Дата початку</label>
-                        <input asp-for="Booking.StartDate" class="form-control" type="date" />
+                        <input asp-for="Booking.StartDate" class="form-control" type="date"
+                               id="startDate" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
                         <span asp-validation-for="Booking.StartDate" class="text-danger"></span>
                     </div>
                     <div class="mb-3">
                         <label asp-for="Booking.EndDate" class="form-label text-black">Дата закінчення</label>
-                        <input asp-for="Booking.EndDate" class="form-control" type="date" />
+                        <input asp-for="Booking.EndDate" class="form-control" type="date"
+                               id="endDate" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
                         <span asp-validation-for="Booking.EndDate" class="text-danger"></span>
                     </div>
                     <div class="mb-3">
-                        <label asp-for="Booking.StatusId" class="form-label text-black">Статус</label>
-                        <select asp-for="Booking.StatusId" class="form-control">
-                            <option value="" disabled selected>Виберіть статус</option>
-                            @foreach (var status in Model.BookingStatuses)
-                            {
-                                <option value="@status.Id">@status.DisplayName</option>
-                            }
-                        </select>
-                        <span asp-validation-for="Booking.StatusId" class="text-danger"></span>
+                        <label class="form-label text-black">Статус</label>
+                        <input type="text" class="form-control" id="statusDisplay" readonly />
+                        <input type="hidden" asp-for="Booking.StatusId" id="statusId" />
                     </div>
                     <div class="d-flex justify-content-center gap-2 mt-4">
                         <button type="submit" class="btn btn-primary">Забронювати</button>
@@ -67,32 +63,79 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
     <script>
         $(document).ready(function () {
+            // Отримуємо поточну дату
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            function updateStatus() {
+                const startDate = new Date($("#startDate").val());
+
+                if (startDate) {
+                    if (startDate <= today) {
+                        $("#statusDisplay").val("Активне");
+                        $("#statusId").val(1); // BOOKING_STATUS_ACTIVE
+                    } else {
+                        $("#statusDisplay").val("Заплановане");
+                        $("#statusId").val(4); // BOOKING_STATUS_PLANNED
+                    }
+                }
+            }
+
+            // Оновлюємо статус при зміні дати
+            $("#startDate").change(updateStatus);
+
+            // Оновлюємо статус при завантаженні сторінки
+            updateStatus();
+
+            // Додаємо спеціальний метод валідації для мінімальної дати
+            $.validator.addMethod("minDate", function(value, element) {
+                if (!value) return true;
+                var inputDate = new Date(value);
+                return inputDate >= today;
+            }, "Дата не може бути раніше сьогоднішньої.");
+
             $("#bookingForm").validate({
                 rules: {
                     "Booking.StartDate": {
                         required: true,
-                        date: true
+                        date: true,
+                        minDate: true
                     },
                     "Booking.EndDate": {
                         required: true,
-                        date: true
+                        date: true,
+                        minDate: true
                     }
                 },
                 messages: {
                     "Booking.StartDate": {
-                        required: "Дата початку є обов'язковою."
+                        required: "Дата початку є обов'язковою.",
+                        minDate: "Дата початку не може бути раніше сьогоднішньої дати."
                     },
                     "Booking.EndDate": {
-                        required: "Дата закінчення є обов'язковою."
+                        required: "Дата закінчення є обов'язковою.",
+                        minDate: "Дата закінчення не може бути раніше сьогоднішньої дати."
                     }
                 },
                 submitHandler: function (form) {
                     var startDate = new Date($("#Booking_StartDate").val());
                     var endDate = new Date($("#Booking_EndDate").val());
+
+                    if (startDate < today) {
+                        $("#Booking_StartDate").after('<span class="text-danger field-validation-error">Дата початку не може бути раніше сьогоднішньої дати.</span>');
+                        return false;
+                    }
+
+                    if (endDate < today) {
+                        $("#Booking_EndDate").after('<span class="text-danger field-validation-error">Дата закінчення не може бути раніше сьогоднішньої дати.</span>');
+                        return false;
+                    }
+
                     if (startDate >= endDate) {
                         $("#Booking_EndDate").after('<span class="text-danger field-validation-error">Дата початку повинна бути раніше дати закінчення.</span>');
                         return false;
                     }
+
                     form.submit();
                 }
             });
