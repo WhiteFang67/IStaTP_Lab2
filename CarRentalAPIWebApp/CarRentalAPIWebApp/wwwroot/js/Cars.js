@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    // Відображає повідомлення, яке автоматично зникає через 5 секунд.
     function showAlert(message, type = 'danger') {
         var alertHtml = `
             <div class="alert alert-${type} alert-dismissible fade show" role="alert">
@@ -12,6 +13,7 @@
         }, 5000);
     }
 
+    // Обробляє кнопку "Видалити" для автомобіля.
     $(document).on('click', '.delete-btn', function () {
         var carId = $(this).data('car-id');
         var carBrand = $(this).data('car-brand');
@@ -20,6 +22,7 @@
         $('#deleteModal').modal('show');
     });
 
+    // Обробляє підтвердженння видалення
     $(document).on('click', '#confirmDeleteBtn', function () {
         var carId = $(this).data('car-id');
         var $triggerButton = $('.delete-btn[data-car-id="' + carId + '"]');

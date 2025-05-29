@@ -219,26 +219,6 @@
   },
   {
     "ContainingType": "CarRentalAPIWebApp.Controllers.ReviewsController",
-    "Method": "GetReviews",
-    "RelativePath": "api/Reviews",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CarRentalAPIWebApp.Controllers.ReviewsController\u002BReviewDto, CarRentalAPIWebApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "CarRentalAPIWebApp.Controllers.ReviewsController",
     "Method": "PostReview",
     "RelativePath": "api/Reviews",
     "HttpMethod": "POST",
@@ -246,14 +226,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "reviewDto",
-        "Type": "CarRentalAPIWebApp.Controllers.ReviewsController\u002BReviewDto",
+        "Name": "review",
+        "Type": "CarRentalAPIWebApp.Models.Review",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CarRentalAPIWebApp.Controllers.ReviewsController\u002BReviewDto",
+        "Type": "CarRentalAPIWebApp.Models.Review",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -303,8 +283,8 @@
         "IsRequired": true
       },
       {
-        "Name": "reviewDto",
-        "Type": "CarRentalAPIWebApp.Controllers.ReviewsController\u002BReviewDto",
+        "Name": "review",
+        "Type": "CarRentalAPIWebApp.Models.Review",
         "IsRequired": true
       }
     ],

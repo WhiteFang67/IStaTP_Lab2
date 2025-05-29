@@ -15,29 +15,22 @@
 
                 @if (TempData["SuccessMessage"] != null)
                 {
-                    <div class="alert alert-dismissible alert-success mb-3">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                        <strong>Успіх!</strong> @TempData["SuccessMessage"]
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        @TempData["SuccessMessage"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 }
 
-                @if (TempData["ErrorMessage"] != null)
-                {
-                    <div class="alert alert-danger mb-3" role="alert">
-                        @TempData["ErrorMessage"]
-                    </div>
-                }
-
-                <form id="addReviewForm" action="javascript:void(0);">
+                <form id="createReviewForm" asp-page-handler="Create" novalidate>
                     <div class="mb-3">
-                        <label for="add-username" class="form-label text-black">Ім'я користувача</label>
-                        <input type="text" class="form-control" id="add-username" placeholder="Введіть ваше ім'я">
-                        <div class="invalid-feedback">Ім'я користувача є обов'язковим.</div>
+                        <label asp-for="Review.UserName" class="form-label text-black">Ім'я користувача</label>
+                        <input asp-for="Review.UserName" class="form-control" id="Review_UserName" placeholder="Введіть ваше ім'я" required />
+                        <span asp-validation-for="Review.UserName" class="text-danger" id="create-username-error"></span>
                     </div>
                     <div class="mb-3">
-                        <label for="add-comment" class="form-label text-black">Коментар</label>
-                        <textarea class="form-control" id="add-comment" rows="3" placeholder="Введіть ваш відгук"></textarea>
-                        <div class="invalid-feedback">Коментар є обов'язковим.</div>
+                        <label asp-for="Review.Comment" class="form-label text-black">Коментар</label>
+                        <textarea asp-for="Review.Comment" class="form-control" id="Review_Comment" rows="3" placeholder="Введіть ваш відгук" maxlength="500" required></textarea>
+                        <span asp-validation-for="Review.Comment" class="text-danger" id="create-comment-error"></span>
                     </div>
                     <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary">Додати відгук</button>
@@ -51,7 +44,27 @@
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <h3 class="mb-4 text-white">Відгуки</h3>
-            <div id="reviews" class="reviews-list"></div>
+            @if (Model.Reviews == null || !Model.Reviews.Any())
+            {
+                <p>Наразі немає відгуків.</p>
+            }
+            else
+            {
+                <div class="reviews-list">
+                    @foreach (var review in Model.Reviews)
+                    {
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">@review.UserName</h5>
+                                <p class="card-text">@review.Comment</p>
+                                <p class="card-text"><small class="text-muted">@review.Date.ToString("dd.MM.yyyy")</small></p>
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editReviewModal" data-review-id="@review.Id" data-review-username="@review.UserName" data-review-comment="@review.Comment">Редагувати</button>
+                                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteReviewModal" data-review-id="@review.Id" data-review-username="@review.UserName">Видалити</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
         </div>
     </div>
 
@@ -64,17 +77,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="editReviewForm" action="javascript:void(0);">
-                        <input type="hidden" id="edit-id">
+                    <form id="editReviewForm" novalidate>
+                        <input type="hidden" id="edit-id" asp-for="EditReview.Id" />
                         <div class="mb-3">
                             <label for="edit-username" class="form-label">Ім'я користувача</label>
-                            <input type="text" class="form-control" id="edit-username" placeholder="Введіть ваше ім'я">
-                            <div class="invalid-feedback">Ім'я користувача є обов'язковим.</div>
+                            <input type="text" class="form-control" id="edit-username" asp-for="EditReview.UserName" placeholder="Введіть ваше ім'я" required />
+                            <span asp-validation-for="EditReview.UserName" class="text-danger" id="edit-username-error"></span>
                         </div>
                         <div class="mb-3">
                             <label for="edit-comment" class="form-label">Коментар</label>
-                            <textarea class="form-control" id="edit-comment" rows="3" placeholder="Введіть ваш відгук"></textarea>
-                            <div class="invalid-feedback">Коментар є обов'язковим.</div>
+                            <textarea class="form-control" id="edit-comment" asp-for="EditReview.Comment" rows="3" placeholder="Введіть ваш відгук" maxlength="500" required></textarea>
+                            <span asp-validation-for="EditReview.Comment" class="text-danger" id="edit-comment-error"></span>
                         </div>
                         <div class="d-flex justify-content-end gap-2">
                             <button type="submit" class="btn btn-primary">Зберегти</button>
@@ -110,4 +123,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/Reviews.js" asp-append-version="true"></script>
+    <partial name="_ValidationScriptsPartial" />
 }

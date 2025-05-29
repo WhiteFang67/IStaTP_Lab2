@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
+using CarRentalAPIWebApp.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CarRentalAPIWebApp.Models;
+using Microsoft.Extensions.Logging;
 
 namespace CarRentalAPIWebApp.Controllers
 {
@@ -13,39 +13,24 @@ namespace CarRentalAPIWebApp.Controllers
     public class ReviewsController : ControllerBase
     {
         private readonly CarRentalAPIContext _context;
+        private readonly ILogger<ReviewsController> _logger;
 
-        public ReviewsController(CarRentalAPIContext context)
+        public ReviewsController(CarRentalAPIContext context, ILogger<ReviewsController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
-        // DTO для відгуків (залишаємо як є, але синхронізуємо з ReviewDto.cs)
+        // DTO для відгуків (використовується лише для GET)
         public class ReviewDto
         {
             public int Id { get; set; }
             public string UserName { get; set; }
             public string Comment { get; set; }
-            public DateTime Date { get; set; }
+            public System.DateTime Date { get; set; }
         }
 
-        // GET: api/Reviews
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<ReviewDto>>> GetReviews()
-        {
-            var reviews = await _context.Reviews
-                .Select(r => new ReviewDto
-                {
-                    Id = r.Id,
-                    UserName = r.UserName,
-                    Comment = r.Comment,
-                    Date = r.Date
-                })
-                .ToListAsync();
-
-            return Ok(reviews);
-        }
-
-        // GET: api/Reviews/5
+        // GET: api/Reviews/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<ReviewDto>> GetReview(int id)
         {
@@ -62,121 +47,117 @@ namespace CarRentalAPIWebApp.Controllers
 
             if (review == null)
             {
+                _logger.LogWarning("Review with ID {Id} not found.", id);
                 return NotFound(new { message = "Відгук не знайдено." });
             }
 
-            return Ok(review);
+            _logger.LogInformation("Fetched review with ID: {Id}", id);
+            return review;
         }
 
         // POST: api/Reviews
         [HttpPost]
-        public async Task<ActionResult<ReviewDto>> PostReview([FromBody] ReviewDto reviewDto)
+        public async Task<ActionResult<Review>> PostReview(Review review)
         {
-            if (reviewDto == null)
+            if (review == null || !ModelState.IsValid)
             {
-                return BadRequest("Дані відгуку не надано.");
+                _logger.LogWarning("Review data is null or validation failed.");
+                return BadRequest(ModelState);
             }
 
-            if (string.IsNullOrWhiteSpace(reviewDto.UserName))
-            {
-                return BadRequest("Ім'я користувача є обов'язковим.");
-            }
-
-            if (string.IsNullOrWhiteSpace(reviewDto.Comment))
-            {
-                return BadRequest("Коментар є обов'язковим.");
-            }
-
-            if (reviewDto.Comment.Length > 500)
-            {
-                return BadRequest("Коментар не може перевищувати 500 символів.");
-            }
-
-            var review = new Review
-            {
-                UserName = reviewDto.UserName,
-                Comment = reviewDto.Comment,
-                Date = reviewDto.Date != default ? reviewDto.Date : DateTime.Now
-            };
-
+            review.Date = System.DateTime.Now; // Дата встановлюється серверно
             _context.Reviews.Add(review);
-            await _context.SaveChangesAsync();
-
-            reviewDto.Id = review.Id;
-            reviewDto.Date = review.Date;
-            return CreatedAtAction(nameof(GetReview), new { id = review.Id }, reviewDto);
+            try
+            {
+                await _context.SaveChangesAsync();
+                _logger.LogInformation("Review created with ID: {Id}", review.Id);
+                return CreatedAtAction(nameof(GetReview), new { id = review.Id }, review);
+            }
+            catch (DbUpdateException ex)
+            {
+                _logger.LogError(ex, "Error creating review.");
+                return StatusCode(500, new { message = "Помилка створення відгуку." });
+            }
         }
 
-        // PUT: api/Reviews/5
+        // PUT: api/Reviews/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutReview(int id, [FromBody] ReviewDto reviewDto)
+        public async Task<IActionResult> PutReview(int id, Review review)
         {
-            if (id != reviewDto.Id)
+            if (id != review.Id)
             {
-                return BadRequest("ID відгуку не співпадає.");
+                _logger.LogWarning("Review ID mismatch: URL ID {UrlId}, Body ID {BodyId}", id, review.Id);
+                return BadRequest(new { message = "Review ID mismatch." });
             }
 
-            if (string.IsNullOrWhiteSpace(reviewDto.UserName))
+            if (review == null || !ModelState.IsValid)
             {
-                return BadRequest("Ім'я користувача є обов'язковим.");
+                _logger.LogWarning("Review data is null or validation failed for ID {Id}.", id);
+                return BadRequest(ModelState);
             }
 
-            if (string.IsNullOrWhiteSpace(reviewDto.Comment))
+            var existingReview = await _context.Reviews.FindAsync(id);
+            if (existingReview == null)
             {
-                return BadRequest("Коментар є обов'язковим.");
-            }
-
-            if (reviewDto.Comment.Length > 500)
-            {
-                return BadRequest("Коментар не може перевищувати 500 символів.");
-            }
-
-            var review = await _context.Reviews.FindAsync(id);
-            if (review == null)
-            {
+                _logger.LogWarning("Review with ID {Id} not found.", id);
                 return NotFound(new { message = "Відгук не знайдено." });
             }
 
-            review.UserName = reviewDto.UserName;
-            review.Comment = reviewDto.Comment;
-            review.Date = reviewDto.Date != default ? reviewDto.Date : review.Date;
-
-            _context.Entry(review).State = EntityState.Modified;
+            existingReview.UserName = review.UserName;
+            existingReview.Comment = review.Comment;
+            existingReview.Date = System.DateTime.Now; // Оновлюємо дату
 
             try
             {
                 await _context.SaveChangesAsync();
+                _logger.LogInformation("Review with ID {Id} successfully updated.", id);
+                return NoContent();
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ReviewExists(id))
+                if (!await ReviewExists(id))
                 {
+                    _logger.LogWarning("Concurrency conflict: Review with ID {Id} not found.", id);
                     return NotFound(new { message = "Відгук не знайдено." });
                 }
+                _logger.LogError("Concurrency conflict when updating review with ID {Id}.", id);
                 throw;
             }
-
-            return Ok(reviewDto);
+            catch (DbUpdateException ex)
+            {
+                _logger.LogError(ex, "Error updating review ID: {Id}", id);
+                return StatusCode(500, new { message = "Помилка оновлення відгуку." });
+            }
         }
 
-        // DELETE: api/Reviews/5
+        // DELETE: api/Reviews/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteReview(int id)
         {
             var review = await _context.Reviews.FindAsync(id);
             if (review == null)
             {
+                _logger.LogWarning("Review with ID {Id} not found.", id);
                 return NotFound(new { message = "Відгук не знайдено." });
             }
 
             _context.Reviews.Remove(review);
-            await _context.SaveChangesAsync();
-            return Ok(new { message = "Відгук успішно видалено." });
+            try
+            {
+                await _context.SaveChangesAsync();
+                _logger.LogInformation("Review deleted with ID: {Id}", id);
+                return Ok(new { message = "Відгук успішно видалено." });
+            }
+            catch (DbUpdateException ex)
+            {
+                _logger.LogError(ex, "Error deleting review ID: {Id}", id);
+                return StatusCode(500, new { message = "Помилка видалення відгуку." });
+            }
         }
 
-        private bool ReviewExists(int id)
+        private async Task<bool> ReviewExists(int id)
         {
-            return _context.Reviews.Any(r => r.Id == id);
+            return await _context.Reviews.AnyAsync(r => r.Id == id);
         }
     }
 }
