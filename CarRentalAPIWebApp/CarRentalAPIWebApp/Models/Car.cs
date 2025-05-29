@@ -28,7 +28,7 @@ namespace CarRentalAPIWebApp.Models
 
         [Required(ErrorMessage = "Поле Статус є обов'язковим")]
         [Display(Name = "Статус")]
-        public int StatusId { get; set; } // Зовнішній ключ до CarStatusType
+        public int StatusId { get; set; }
 
         [Required(ErrorMessage = "Поле Ціна за день є обов'язковим")]
         [Range(0.01, 10000, ErrorMessage = "Ціна за день має бути між 0.01 і 10000")]
@@ -36,7 +36,7 @@ namespace CarRentalAPIWebApp.Models
         public decimal PricePerDay { get; set; }
 
         [ValidateNever]
-        public CarStatusType Status { get; set; } // Навігаційна властивість
+        public CarStatusType Status { get; set; }
 
         [ValidateNever]
         public ICollection<Booking> Bookings { get; set; }

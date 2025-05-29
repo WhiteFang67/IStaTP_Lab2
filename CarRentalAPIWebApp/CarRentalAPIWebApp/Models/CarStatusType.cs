@@ -8,10 +8,10 @@ namespace CarRentalAPIWebApp.Models
 
         [Required]
         [StringLength(50)]
-        public string Name { get; set; } // Наприклад, "Available", "Rented", "UnderRepair"
+        public string Name { get; set; }
 
         [Required]
         [StringLength(100)]
-        public string DisplayName { get; set; } // Наприклад, "Доступне", "Орендоване", "В ремонті"
+        public string DisplayName { get; set; }
     }
 }

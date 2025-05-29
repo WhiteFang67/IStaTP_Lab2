@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace CarRentalAPIWebApp.Models
@@ -8,25 +7,25 @@ namespace CarRentalAPIWebApp.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Автомобіль є обов'язковим.")]
         public int CarId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Ім'я користувача є обов'язковим.")]
         public string UserName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Дата початку є обов'язковою.")]
         public DateTime StartDate { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Дата закінчення є обов'язковою.")]
         public DateTime EndDate { get; set; }
 
-        [Required]
-        public int StatusId { get; set; } // Зовнішній ключ до BookingStatusType
+        [Required(ErrorMessage = "Статус є обов'язковим.")]
+        public int StatusId { get; set; }
 
         [ValidateNever]
-        public Car Car { get; set; } // Навігаційна властивість, без [Required]
+        public Car Car { get; set; }
 
         [ValidateNever]
-        public BookingStatusType Status { get; set; } // Навігаційна властивість
+        public BookingStatusType Status { get; set; }
     }
 }

@@ -25,7 +25,7 @@
                     </div>
                     <div class="mb-3">
                         <label asp-for="Car.Year" class="form-label text-black">Рік</label>
-                        <input asp-for="Car.Year" class="form-control" type="number" min="1900" max="2025" placeholder="Введіть рік" />
+                        <input asp-for="Car.Year" class="form-control" type="number" min="1950" max="2025" placeholder="Введіть рік" />
                         <span asp-validation-for="Car.Year" class="text-danger"></span>
                     </div>
                     <div class="mb-3">
@@ -36,7 +36,7 @@
                         <span asp-validation-for="Car.StatusId" class="text-danger"></span>
                     </div>
                     <div class="mb-3">
-                        <label asp-for="Car.PricePerDay" class="form-label text-black">Ціна за день (грн)</label>
+                        <label asp-for="Car.PricePerDay" class="form-label text-black">Ціна за день $</label>
                         <input asp-for="Car.PricePerDay" class="form-control" type="number" min="0.01" step="0.01" placeholder="Введіть ціну" />
                         <span asp-validation-for="Car.PricePerDay" class="text-danger"></span>
                     </div>

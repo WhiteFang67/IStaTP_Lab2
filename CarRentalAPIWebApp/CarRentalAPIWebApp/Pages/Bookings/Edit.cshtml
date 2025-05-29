@@ -30,7 +30,7 @@
                 {
                     <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-                    <form method="post">
+                    <form method="post" id="bookingForm">
                         <input type="hidden" asp-for="Booking.Id" />
                         <div class="mb-3">
                             <label asp-for="Booking.CarId" class="form-label text-black">Автомобіль</label>
@@ -41,7 +41,7 @@
                         </div>
                         <div class="mb-3">
                             <label asp-for="Booking.UserName" class="form-label text-black">Ім'я користувача</label>
-                            <input asp-for="Booking.UserName" class="form-control" placeholder="Введіть ім'я" />
+                            <input asp-for="Booking.UserName" type="text" class="form-control" placeholder="Введіть ім'я" />
                             <span asp-validation-for="Booking.UserName" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
@@ -74,5 +74,41 @@
 
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <partial name="_ValidationScriptsPartial" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#bookingForm").validate({
+                rules: {
+                    "Booking.StartDate": {
+                        required: true,
+                        date: true
+                    },
+                    "Booking.EndDate": {
+                        required: true,
+                        date: true
+                    }
+                },
+                messages: {
+                    "Booking.StartDate": {
+                        required: "Дата початку є обов'язковою."
+                    },
+                    "Booking.EndDate": {
+                        required: "Дата закінчення є обов'язковою."
+                    }
+                },
+                submitHandler: function(form) {
+                    var startDate = new Date($("#Booking_StartDate").val());
+                    var endDate = new Date($("#Booking_EndDate").val());
+                    if (startDate >= endDate) {
+                        $("#Booking_EndDate").next(".field-validation-error").remove();
+                        $("#Booking_EndDate").after('<span class="text-danger field-validation-error">Дата початку повинна бути раніше дати закінчення.</span>');
+                        return false;
+                    }
+                    form.submit();
+                }
+            });
+        });
+    </script>
 }

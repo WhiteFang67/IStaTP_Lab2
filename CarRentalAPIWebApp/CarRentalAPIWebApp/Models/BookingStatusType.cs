@@ -8,10 +8,10 @@ namespace CarRentalAPIWebApp.Models
 
         [Required]
         [StringLength(50)]
-        public string Name { get; set; } // Наприклад, "Active", "Completed", "Cancelled"
+        public string Name { get; set; }
 
         [Required]
         [StringLength(100)]
-        public string DisplayName { get; set; } // Наприклад, "Активне", "Завершене", "Скасоване"
+        public string DisplayName { get; set; }
     }
 }
