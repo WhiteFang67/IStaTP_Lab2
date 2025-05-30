@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    // Показує сповіщення Bootstrap із заданим повідомленням і типом
     function showAlert(message, type = 'danger') {
         var alertHtml = `
             <div class="alert alert-${type} alert-dismissible fade show" role="alert">
@@ -12,6 +13,7 @@
         }, 5000);
     }
 
+    // Відкриває модальне вікно для підтвердження видалення відгуку
     $(document).on('click', '.delete-btn', function () {
         var reviewId = $(this).data('review-id');
         var reviewUserName = $(this).data('review-username');
@@ -20,6 +22,7 @@
         $('#deleteReviewModal').modal('show');
     });
 
+    // Виконує видалення відгуку через AJAX-запит
     $(document).on('click', '#confirmDeleteBtn', function () {
         var reviewId = $(this).data('review-id');
         var $triggerButton = $('.delete-btn[data-review-id="' + reviewId + '"]');
@@ -49,6 +52,7 @@
         });
     });
 
+    // Відкриває модальне вікно редагування з даними відгуку
     $(document).on('click', '.btn-warning', function () {
         var reviewId = $(this).data('review-id');
         var reviewUserName = $(this).data('review-username');
@@ -63,7 +67,7 @@
         $('#editReviewModal').modal('show');
     });
 
-    // Обробник для форми редагування
+    // Обробляє відправку форми редагування відгуку через AJAX
     $('#editReviewForm').on('submit', function (e) {
         e.preventDefault();
         // Перевіряємо клієнтську валідацію
@@ -112,7 +116,7 @@
         });
     });
 
-    // Обробник для форми створення
+    // Обробляє відправку форми створення нового відгуку через AJAX
     $('#createReviewForm').on('submit', function (e) {
         e.preventDefault();
         // Перевіряємо клієнтську валідацію

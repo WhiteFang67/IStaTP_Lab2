@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\bookings\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\bookings\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\wwwroot\\js\\reviews.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\wwwroot\\js\\reviews.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\wwwroot\\js\\cars.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\wwwroot\\js\\cars.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\wwwroot\\js\\bookings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -27,36 +47,28 @@
       "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\bookings\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\bookings\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\wwwroot\\js\\cars.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\wwwroot\\js\\cars.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\bookings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\bookings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\bookings\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\bookings\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,8 +83,20 @@
       "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\bookings\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\wwwroot\\js\\reviews.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\wwwroot\\js\\reviews.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\bookings\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\bookings\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\models\\carrentalapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,36 +123,12 @@
       "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\pages\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\pages\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|solutionrelative:carrentalapiwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A14A9-CED5-4797-A6F6-6D73BE38B8CF}|CarRentalAPIWebApp\\CarRentalAPIWebApp.csproj|d:\\\u043A\u043D\u0443\\\u043A\u0443\u0440\u04412\\\u0456\u0441\u0442\u0430\u0442\u043F\\\u043B\u0430\u0431\u04302\\carrentalapiwebapp\\carrentalapiwebapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -162,7 +162,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -178,105 +178,277 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml.cs",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml.cs",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T19:19:54.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAuwDsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T14:16:27.225Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml.cs",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml.cs",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAmwDkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T14:16:50.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookingsController.cs",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Controllers\\BookingsController.cs",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Controllers\\BookingsController.cs",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Controllers\\BookingsController.cs",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Controllers\\BookingsController.cs",
-              "ViewState": "AgIAABABAAAAAAAAAAAqwDABAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T20:13:49.61Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Bookings.js",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\Bookings.js",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\wwwroot\\js\\Bookings.js",
               "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\Bookings.js",
               "RelativeToolTip": "CarRentalAPIWebApp\\wwwroot\\js\\Bookings.js",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAuwJsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-22T20:06:44.382Z"
+              "WhenOpened": "2025-05-22T20:06:44.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cars.js",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\Cars.js",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\wwwroot\\js\\Cars.js",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\Cars.js",
+              "RelativeToolTip": "CarRentalAPIWebApp\\wwwroot\\js\\Cars.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-22T17:48:48.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Reviews.js",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\Reviews.js",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\wwwroot\\js\\Reviews.js",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\Reviews.js",
+              "RelativeToolTip": "CarRentalAPIWebApp\\wwwroot\\js\\Reviews.js",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAwKQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-22T19:38:08.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Controllers\\BookingsController.cs",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAUwDABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T20:13:49.61Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml.cs",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml.cs",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwGgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T20:52:16.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml.cs",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml.cs",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T14:16:50.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Program.cs",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Program.cs",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T14:22:07.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAuwH8AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Create.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAuwDsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T20:39:21.454Z"
+              "WhenOpened": "2025-05-22T14:16:27.225Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-23T09:48:48.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CarsController.cs",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Controllers\\CarsController.cs",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Controllers\\CarsController.cs",
               "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Controllers\\CarsController.cs",
               "RelativeToolTip": "CarRentalAPIWebApp\\Controllers\\CarsController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAADwv40AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T14:14:14.846Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwB0AAAAdAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T13:52:22.778Z",
+              "WhenOpened": "2025-05-22T20:39:21.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Edit.cshtml",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Edit.cshtml",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Bookings\\Edit.cshtml",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAwwJ8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T20:39:30.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T13:52:57.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAACgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T19:01:08.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T20:06:51.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml.cs",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml.cs",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T09:49:02.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Controllers\\ReviewsController.cs",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA9wAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:23:21.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml.cs",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml.cs",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:19:54.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml.cs",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml.cs",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:53:00.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml.cs",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml.cs",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T20:09:22.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\appsettings.json",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\appsettings.json",
+              "RelativeToolTip": "CarRentalAPIWebApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-22T14:49:04.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Privacy.cshtml",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Privacy.cshtml",
@@ -284,48 +456,23 @@
               "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-23T09:50:55.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T09:50:55.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml.cs",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml.cs",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Bookings\\Create.cshtml.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAuwGgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T20:52:16.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Edit.cshtml",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Edit.cshtml",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Bookings\\Edit.cshtml",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAwwJ8AAAABAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwB0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T20:39:30.484Z"
+              "WhenOpened": "2025-05-22T13:52:22.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Cars.js",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\Cars.js",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\wwwroot\\js\\Cars.js",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\Cars.js",
-              "RelativeToolTip": "CarRentalAPIWebApp\\wwwroot\\js\\Cars.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-22T17:48:48.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 23,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Edit.cshtml.cs",
@@ -337,67 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ReviewsController.cs",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Controllers\\ReviewsController.cs",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Controllers\\ReviewsController.cs",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Controllers\\ReviewsController.cs",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Controllers\\ReviewsController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T19:23:21.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml.cs",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml.cs",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T16:53:00.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Edit.cshtml.cs",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml.cs",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml.cs",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml.cs",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowFAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T09:49:02.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml.cs",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml.cs",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T20:09:22.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Reviews.js",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\Reviews.js",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\wwwroot\\js\\Reviews.js",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\Reviews.js",
-              "RelativeToolTip": "CarRentalAPIWebApp\\wwwroot\\js\\Reviews.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-22T19:38:08.586Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "CarRentalAPIContext.cs",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Models\\CarRentalAPIContext.cs",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Models\\CarRentalAPIContext.cs",
@@ -409,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "BookingStatusType.cs",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Models\\BookingStatusType.cs",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Models\\BookingStatusType.cs",
@@ -421,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "CarStatusType.cs",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Models\\CarStatusType.cs",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Models\\CarStatusType.cs",
@@ -433,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "Booking.cs",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Models\\Booking.cs",
@@ -445,7 +532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "Car.cs",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Models\\Car.cs",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Models\\Car.cs",
@@ -457,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Index.cshtml",
@@ -469,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "Review.cs",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Models\\Review.cs",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Models\\Review.cs",
@@ -481,19 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Reviews\\Index.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T19:01:08.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "site.js",
               "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "CarRentalAPIWebApp\\wwwroot\\js\\site.js",
@@ -502,66 +577,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-05-29T18:04:23.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Program.cs",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Program.cs",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Program.cs",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T14:22:07.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Edit.cshtml",
-              "ViewState": "AgIAACMAAAAAAAAAAAAuwEEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-23T09:48:48.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Cars\\Index.cshtml",
-              "ViewState": "AgIAADQAAAAAAAAAAAAuwFIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T13:52:57.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml",
-              "RelativeToolTip": "CarRentalAPIWebApp\\Pages\\Bookings\\Index.cshtml",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAAGEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T20:06:51.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\appsettings.json",
-              "RelativeDocumentMoniker": "CarRentalAPIWebApp\\appsettings.json",
-              "ToolTip": "D:\\\u041A\u041D\u0423\\\u041A\u0443\u0440\u04412\\\u0406\u0421\u0442\u0430\u0422\u041F\\\u041B\u0430\u0431\u04302\\CarRentalAPIWebApp\\CarRentalAPIWebApp\\appsettings.json",
-              "RelativeToolTip": "CarRentalAPIWebApp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-22T14:49:04.714Z"
             },
             {
               "$type": "Document",

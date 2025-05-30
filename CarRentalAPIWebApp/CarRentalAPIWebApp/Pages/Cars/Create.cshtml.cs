@@ -14,7 +14,7 @@ namespace CarRentalAPIWebApp.Pages.Cars
     {
         private readonly ILogger<CreateModel> _logger;
         private readonly CarRentalAPIContext _context;
-        private const int CAR_STATUS_RENTED = 2; // ID статусу "Орендоване"
+        private const int CAR_STATUS_RENTED = 2; 
 
         public CreateModel(ILogger<CreateModel> logger, CarRentalAPIContext context)
         {

@@ -75,7 +75,7 @@ namespace CarRentalAPIWebApp.Controllers
         public async Task<IActionResult> PutCar(int id, Car car)
         {
             if (id != car.Id)
-                return BadRequest("Car ID mismatch.");
+                return BadRequest("Невідповідність ідентифікатора автомобіля.");
 
             var existingCar = await _context.Cars
                 .Include(c => c.Bookings)
@@ -87,10 +87,10 @@ namespace CarRentalAPIWebApp.Controllers
             if (existingCar.Bookings.Any(b =>
                 b.StatusId == BOOKING_STATUS_ACTIVE ||
                 b.StatusId == BOOKING_STATUS_PLANNED))
-                return BadRequest("Cannot edit car with active or planned bookings.");
+                return BadRequest("Неможливо редагувати автомобіль з активними або запланованими бронюваннями.");
 
             if (car.StatusId == CAR_STATUS_RENTED)
-                return BadRequest("Cannot manually set status to 'Rented'");
+                return BadRequest("Неможливо вручну встановити статус на «Орендоване»");
 
             existingCar.Brand = car.Brand;
             existingCar.Model = car.Model;
@@ -120,10 +120,10 @@ namespace CarRentalAPIWebApp.Controllers
                 return BadRequest(ModelState);
 
             if (car.StatusId == CAR_STATUS_RENTED)
-                return BadRequest("Cannot set car status to 'Rented' when creating");
+                return BadRequest("Неможливо встановити статус автомобіля на «Орендовано» під час створення");
 
             if (!await _context.CarStatusTypes.AnyAsync(s => s.Id == car.StatusId))
-                return BadRequest("Invalid StatusId.");
+                return BadRequest("Недійсний ідентифікатор статусу.");
 
             _context.Cars.Add(car);
             await _context.SaveChangesAsync();
@@ -141,11 +141,11 @@ namespace CarRentalAPIWebApp.Controllers
                 return NotFound();
 
             if (car.Bookings.Any())
-                return BadRequest("Cannot delete car with existing bookings");
+                return BadRequest("Неможливо видалити автомобіль з існуючими бронюваннями");
 
             _context.Cars.Remove(car);
             await _context.SaveChangesAsync();
-            return Ok(new { message = "Car deleted successfully" });
+            return Ok(new { message = "Автомобіль успішно видалено" });
         }
 
         private async Task<bool> CarExists(int id) =>
